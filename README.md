@@ -43,13 +43,13 @@ SELECT * FROM reclassify_invoices();
 
 4. What happens:
 
-Any invoice with account_id = 123 and customer_id = 'ABC001' over $10,000 triggers a new row to be inserted into invoices_active
+   Any invoice with account_id = 123 and customer_id = 'ABC001' over $10,000 triggers a new row to be inserted into invoices_active
 
-That inserted row has:
+   That inserted row has:
 
-amount = 100.00
+   amount = 100.00
 
-category = 'High Value Notice'
+   category = 'High Value Notice'
 
 ## ✅ Result Screenshot
 
