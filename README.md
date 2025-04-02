@@ -18,3 +18,31 @@ A mock finance SQL project that simulates real-world reclassification and condit
 
 ## 📁 Project Structure
 
+schema/
+├── create_invoices_active.sql
+├── create_invoices_archive.sql
+
+data/
+└── insert_sample_data.sql
+
+procedures/
+└── reclassify_invoices.sql
+
+screenshots/
+└── demo_result.png
+
+## 🚀 How to Run
+
+1. Create a PostgreSQL database called `finance_demo`
+2. Run all `.sql` files in the order shown above
+3. Execute the stored function:
+
+```sql
+SELECT * FROM reclassify_invoices();
+```
+
+If any invoice from account 123 and customer 'ABC001' exceeds $10,000, a "High Value Notice" will be inserted.
+
+## ✅ Result Screenshot
+
+![demo](image.png)
