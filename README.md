@@ -45,4 +45,4 @@ If any invoice from account 123 and customer 'ABC001' exceeds $10,000, a "High V
 
 ## ✅ Result Screenshot
 
-![demo](image.png)
+![demo](screenshots/demo.png)
