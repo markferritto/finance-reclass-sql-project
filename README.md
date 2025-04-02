@@ -35,9 +35,11 @@ screenshots/
 
 1. Create a PostgreSQL database called `finance_demo`
 2. Run all `.sql` files in the order shown above
-3. Execute the stored function:
+3. Drop the function first (if needed) and execute the stored function:
 
 ```sql
+DROP FUNCTION IF EXISTS reclassify_invoices();
+
 SELECT * FROM reclassify_invoices();
 ```
 
